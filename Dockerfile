@@ -6,7 +6,7 @@ WORKDIR  /
 
 RUN mkdir ovitmp && \
     cd ovitmp && \
-    curl http://cajuinaweb.com.br/Oviyam-2.7-bin.zip > oviyam.zip && \
+    curl http://cajuinaweb.com.br/Oviyam-bin.zip > oviyam.zip && \
         unzip oviyam.zip
         
 RUN rm -R /usr/local/tomcat/webapps/ROOT/
