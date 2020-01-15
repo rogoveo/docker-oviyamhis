@@ -6,7 +6,7 @@ WORKDIR  /
 
 RUN mkdir ovitmp && \
     cd ovitmp && \
-    curl http://bkp.gotdns.com/oviyam.zip> oviyam.zip && \
+    curl http://bkp.gotdns.com/oviyam.zip > oviyam.zip && \
         unzip oviyam.zip
         
 RUN rm -R /usr/local/tomcat/webapps/ROOT/
