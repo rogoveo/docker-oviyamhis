@@ -1,4 +1,4 @@
-FROM tomcat:7.0.91-jre7
+FROM tomcat:latest
 
 RUN apt-get install curl unzip
 
@@ -6,7 +6,7 @@ WORKDIR  /
 
 RUN mkdir ovitmp && \
     cd ovitmp && \
-    curl http://cajuinaweb.com.br/Oviyam-bin.zip > oviyam.zip && \
+    curl https://downloads.sourceforge.net/project/dcm4che/Oviyam/2.7/Oviyam-2.7-bin.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdcm4che%2Ffiles%2FOviyam%2F2.7%2FOviyam-2.7-bin.zip%2Fdownload&ts=1579058163> oviyam.zip && \
         unzip oviyam.zip
         
 RUN rm -R /usr/local/tomcat/webapps/ROOT/
