@@ -1,4 +1,4 @@
-FROM tomcat:latest
+FROM tomcat:8.5.41-jre8
 
 RUN apt-get install curl unzip
 
